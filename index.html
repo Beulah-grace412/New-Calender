@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Orange Calendar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calendar-wrapper">
+    <div class="calendar-card">
+      <div class="calendar-header">
+        <button id="prevMonth" class="nav-button">‹</button>
+        <h2 id="monthYear"></h2>
+        <div class="calendar-actions">
+          <button id="todayBtn" class="today-button">Today</button>
+          <button id="nextMonth" class="nav-button">›</button>
+        </div>
+      </div>
+      <div class="day-names">
+        <span>SUN</span><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span>
+      </div>
+      <div id="calendar-grid" class="calendar-grid"></div>
+    </div>
+  </div>
+  <div id="event-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="modal-close" class="modal-close">×</span>
+      <h3 id="modal-date" class="modal-title"></h3>
+      <ul id="modal-events" class="modal-events-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
